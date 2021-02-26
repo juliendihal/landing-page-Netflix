@@ -1,0 +1,579 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face
+{
+	font-family: HelveticaNeue;
+	src: url("HelveticaNeue Medium.ttf");
+}
+
+@font-face
+{
+	font-family: HelveticaNeuelight;
+	src: url("HelveticaNeue Light.ttf");
+}
+
+h1
+{
+	font-family: HelveticaNeue;
+}
+
+h2
+{
+	font-family: HelveticaNeuelight;
+	font-weight: lighter;
+}
+
+h3
+{
+	font-family: HelveticaNeuelight;
+	font-weight: lighter;
+padding:20px}
+
+li
+{
+	font-family: HelveticaNeuelight;
+}
+
+.container
+{
+	width: 100%;
+	height: 100%;
+}
+
+.tv-img{
+    width: 530px;
+}
+
+.mobile-img{
+    width: 504px;
+}
+
+.device-img{
+    width: 550px;
+}
+
+/*--------------image cover--------------*/
+.img-cover
+{
+	background-image: url(download.jpg);
+	height: 770px;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+/*--------------image cover--------------*/
+/*--------------header--------------*/
+.header
+{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:0px 50px;
+}
+
+.logo
+{
+	width: 160px;
+}
+
+.id
+{
+	background-color:#e51814;
+	width:112px;
+	padding:8px 0px;
+	text-align: center;
+	border-radius:3px;
+	color:white;
+	text-decoration: none;
+}
+
+/*--------------header--------------*/
+/*--------------Texte image cover--------------*/
+.text-card
+{
+	position: relative;
+	top: 17%;
+	color:white;
+	letter-spacing: 2px;
+	width:100%;
+	max-width: 950px;
+	text-align: center;
+	margin:auto;
+}
+
+.text-card h1
+{
+	font-size: 50px;
+	margin: auto;
+	max-width:640px ;
+}
+
+.text-card h2
+{
+	font-size: 26px;
+	margin:16px auto;
+	max-width:640px ;
+}
+
+.text-card h3
+{
+	font-size: 18px;
+}
+
+/*--------------Texte image cover--------------*/
+.hr
+{
+	background-color:rgb(34, 34, 34);
+	width: 100%;
+	height: 10px;
+}
+
+/*--------------story card --------------*/
+.card
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.background
+{
+	background-color: #000000;
+	color: white;
+	padding: 70px 45px;
+}
+
+.text
+{
+	width: 52%;
+    
+}
+
+.text h1
+{
+	font-size: 50px;
+}
+
+.text h2
+{
+	font-size:24px;
+    margin-top:18px;
+ }
+
+/*--------------story card --------------*/
+/*--------------FAQ--------------*/
+li
+{
+	list-style: none;
+}
+
+.fa h1
+{
+	font-size:50px;
+}
+
+.faq-answer
+{
+	background-color:rgb(48, 48, 48);
+	margin-bottom: 8px;
+	color:white;
+	font-size: 26px;
+	width: 93%;
+	height:74px;
+	text-align:left;
+	border:none;
+	padding-left:30px;
+}
+
+.faq
+{
+	margin:2em;
+}
+
+/*--------------FAQ--------------*/
+form
+{
+	background-color: white;
+	width: 48%;
+	height: 60px;
+	color:black;
+	text-align: left;
+	border:none;
+	border-radius:3px 0px 0px 3px;
+}
+
+.btn
+{
+	background-color: #e51814;
+	color:white;
+	font-size:30px;
+	height: 60px;
+	width: 220px;
+	border:none;
+	border-radius: 0px 3px 3px 0px;
+}
+
+.identification
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*--------------footer --------------*/
+.text-footer
+{
+	text-align: left;
+	color:#757575;
+	letter-spacing: 0px;
+	width: 900px;
+}
+
+.text-footer p
+{
+	margin-bottom:30px;
+    
+}
+
+.footer
+{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    width: 900px;
+    
+	
+}
+
+.footer li
+{
+	width:220px ;
+	padding-right: 10px;
+	margin-bottom: 15px;
+	font-size:13px;
+}
+
+.background-footer{
+    padding:70px 0px;
+}
+
+/*--------------footer --------------*/
+@media screen and (max-width:1024px){
+    .footer{
+        width: 840px;
+    }
+
+	.footer li{
+		width: 210px;
+	}
+
+    .text-footer{
+        width: 840px;
+    }
+}
+/*--------------media queries tablette --------------*/
+@media screen and (max-width:768px)
+{
+	/*--------------header --------------*/
+	.logo
+	{
+		width: 110px;
+	}
+
+	.identification
+	{
+		flex-direction: column;
+	}
+
+	/*--------------header --------------*/
+	/*--------------Texte image cover--------------*/
+	.text-card
+	{
+		width:88% ;
+		letter-spacing: 0px;
+	}
+
+	.text-card h1
+	{
+		font-size: 50px;
+	}
+
+	.text-card h2
+	{
+		font-size: 26px;
+	}
+
+	.text-card h3
+	{
+		font-size: 18px;
+	}
+
+	/*--------------Texte image cover--------------*/
+	/*--------------story card --------------*/
+	.card
+	{
+		flex-direction: column;
+	}
+
+	.reverse
+	{
+		flex-flow: column-reverse;
+	}
+
+	.text
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.text h1
+	{
+		font-size: 40px;
+	}
+
+	.text h2
+	{
+		font-size:20px;
+	}
+
+	/*--------------story card --------------*/
+	.btn
+	{
+		height: 40px;
+		width: 150px;
+		font-size:1rem;
+	    margin-top:15px;
+		border-radius: 3px;
+    }
+
+	form
+	{
+		width: 500px;
+		height: 60px;
+		border-radius: 3px;
+	}
+
+	/*--------------FAQ --------------*/
+	.fa
+	{
+		width: 100%;
+	}
+
+	.faq-answer
+	{
+		font-size:20px;
+	}
+
+	/*--------------FAQ --------------*/
+	/*--------------Footer --------------*/
+	.footer
+	{
+		width: 610px;
+	}
+
+	.footer li
+	{
+		width:150px ;
+	}
+
+	.text-footer
+	{
+		width: 610px;
+	}
+
+	/*--------------Footer --------------*/
+}
+
+/*--------------media queries tablette --------------*/
+/*--------------media queries smartphone L --------------*/
+@media screen and (max-width:425px)
+{
+    /*--------------header --------------*/
+	.logo
+	{
+		width: 90px;
+	}
+
+	.id
+	{
+		width: 90px;
+		padding:4px 0px;
+		font-size:14px;
+	}
+
+    .header
+	{
+		margin: 0px 21px;
+	}
+    /*--------------header --------------*/
+    /*--------------Texte image cover--------------*/
+	.img-cover
+	{
+		height: 536px;
+	}
+
+	
+
+	form
+	{
+		width:380px;
+		height:48px;
+	}
+
+	.text-card
+    {
+	top:15%;
+    }
+
+	.text-card h1
+	{
+		font-size: 28px;
+		margin:0;
+	}
+
+	.text-card h2
+	{
+		font-size: 18px;
+		margin: 16px 0px ;
+	}
+
+	.text-card h3
+	{
+		padding:0px 38px 10px ;
+	}
+
+    /*--------------Texte image cover--------------*/
+    /*--------------story card --------------*/
+	.background
+	{
+		padding: 50px 21px;
+	}
+
+	.text
+	{
+		letter-spacing: 1px;
+	}
+
+	.text h1
+	{
+		font-size: 26px;
+	}
+
+	.text h2
+	{
+		font-size:18px;
+	}
+    /*--------------story card --------------*/
+    /*--------------FAQ --------------*/
+	.back-fa
+	{
+		padding:50px 0px;
+	}
+
+	.faq
+	{
+		margin:32px 0px;
+	}
+
+	.faq-answer
+	{
+		font-size: 16px;
+		width:100%;
+		height: 50px;
+		padding-left: 10px;
+	}
+    /*--------------FAQ --------------*/
+
+	.footer{
+		width: 344px;
+	}
+
+	.text-footer{
+		width:344px;
+	}
+}
+
+/*--------------media queries smartphone L --------------*/
+/*--------------media queries smartphone M --------------*/
+@media screen and (max-width:375px)
+{
+	form
+	{
+		width: 330px;
+	}
+
+	.header
+	{
+		margin: 0px 17px;
+	}
+
+	.text-card h3
+	{
+		padding:0px 5px 10px ;
+		width: 310px;
+	}
+
+	.text-card{
+		width:330px ;
+	}
+
+	.fa{
+		width: 100%;
+	}
+
+	.footer{
+		width: 300px;
+	}
+}
+
+/*--------------media queries smartphone M --------------*/
+/*--------------media queries smartphone s --------------*/
+@media screen and (max-width:320px)
+{
+	form
+	{
+		width:288px;
+	}
+
+	.text-card{
+		width:288px ;
+	}
+
+	.text-card h3
+	{
+		width: 288px;
+		padding:0px 0px 10px ;
+	}
+
+
+	.fa{
+		width: 100%;
+	}
+
+	.footer{
+		width: 259px;
+	}
+
+	.text-footer{
+		width: 259px;
+	}
+	
+
+	.footer li
+	{
+		width: 120px;
+	}
+
+}
+
+/*--------------media queries smartphone s --------------*/
